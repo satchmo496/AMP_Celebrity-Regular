@@ -1,0 +1,80 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualtrics/qamp.js'], function(APIConstructor, ampExtension){
+	
+
+		var API = new APIConstructor();
+		
+		
+		return ampExtension({
+			primeCats :  [
+				{
+					nameForFeedback : 'Regular people',  //Will be used in the user feedback 
+					nameForLogging : 'Regular people', //Will be used in the logging
+					//An array of all media objects for this category.
+					mediaArray : [
+					    {image : 'WFC1.bmp'}, 
+						{image : 'WFC2.bmp'}, 
+						{image : 'WFC3.bmp'}, 
+						{image : 'WFC4.bmp'}, 
+						{image : 'WFC5.bmp'}, 
+						{image : 'WMC1.bmp'}, 
+						{image : 'WMC2.bmp'}, 
+						{image : 'WMC3.bmp'}, 
+						{image : 'WMC4.bmp'}, 
+						{image : 'WMC5.bmp'}]
+	
+
+				}, 
+				{
+					nameForFeedback : 'Celebrities',  //Will be used in the user feedback 
+					nameForLogging : 'Celebrities', //Will be used in the logging
+					//An array of all media objects for this category.
+					mediaArray : [
+					    {image : 'CelebM1.bmp'}, 
+						{image : 'CelebM2.bmp'}, 
+						{image : 'CelebM3.bmp'}, 
+						{image : 'CelebM4.bmp'}, 
+						{image : 'CelebM5.bmp'}, 
+						{image : 'CelebF1.bmp'}, 
+						{image : 'CelebF2.bmp'}, 
+						{image : 'CelebF3.bmp'}, 
+						{image : 'CelebF4.bmp'}, 
+						{image : 'CelebF5.bmp'}]
+				}
+			],
+	
+
+			examplePrimeStimulus : 
+			{
+				nameForLogging : 'examplePrime', //Will be used in the logging
+				//An array of all media objects for this category.
+				mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
+			},				
+			//The CSS for all the target stimuli (usually irrelevant because the targets are Chinese pictographs.
+			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			//The prime categories.
+			targetCats :  [
+				{
+					nameForLogging : 'chinese',  //Will be used in the logging
+					//An array of all media objects for this category. The default is pic1-pic200.jpg
+					mediaArray : [
+						{image : 'pic64.jpg'}, {image : 'pic65.jpg'}, {image : 'pic66.jpg'}, {image : 'pic67.jpg'}, {image : 'pic68.jpg'}, {image : 'pic69.jpg'}, {image : 'pic70.jpg'}, {image : 'pic71.jpg'}, {image : 'pic72.jpg'}, {image : 'pic73.jpg'},
+						{image : 'pic74.jpg'}, {image : 'pic75.jpg'}, {image : 'pic76.jpg'}, {image : 'pic77.jpg'}, {image : 'pic78.jpg'}, {image : 'pic79.jpg'}, {image : 'pic80.jpg'}, {image : 'pic81.jpg'}, {image : 'pic82.jpg'}, {image : 'pic83.jpg'}, 
+						{image : 'pic84.jpg'}, {image : 'pic85.jpg'}, {image : 'pic86.jpg'}, {image : 'pic87.jpg'}, {image : 'pic88.jpg'}, {image : 'pic89.jpg'}, {image : 'pic90.jpg'}, {image : 'pic91.jpg'}, {image : 'pic92.jpg'}, {image : 'pic93.jpg'},
+						{image : 'pic94.jpg'}, {image : 'pic95.jpg'}, {image : 'pic96.jpg'}, {image : 'pic97.jpg'}, {image : 'pic98.jpg'}, {image : 'pic99.jpg'}, {image : 'pic100.jpg'}, {image : 'pic101.jpg'}, {image : 'pic102.jpg'}, {image : 'pic103.jpg'},
+						{image : 'pic104.jpg'}, {image : 'pic105.jpg'}, {image : 'pic106.jpg'}, {image : 'pic107.jpg'}, {image : 'pic108.jpg'}, {image : 'pic109.jpg'}, {image : 'pic110.jpg'}, {image : 'pic111.jpg'}, {image : 'pic112.jpg'}, {image : 'pic113.jpg'},
+						{image : 'pic114.jpg'}, {image : 'pic115.jpg'}, {image : 'pic116.jpg'}, {image : 'pic117.jpg'}, {image : 'pic118.jpg'}, {image : 'pic119.jpg'}, {image : 'pic120.jpg'}, {image : 'pic121.jpg'}, {image : 'pic122.jpg'}, {image : 'pic123.jpg'},
+						{image : 'pic124.jpg'}, {image : 'pic125.jpg'}, {image : 'pic126.jpg'}, {image : 'pic127.jpg'}]
+					
+				}
+			],
+	
+
+			base_url : {//Where are your images at?
+				image : 'https://satchmo496.github.io/images/'
+			},
+			
+			trialsInBlock : [30,30], //Number of trials in each block 
+			trialsInExample : 3, //Change to 0 if you don't want an example block
+			
+			});
+	});
