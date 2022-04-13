@@ -12,15 +12,15 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					//An array of all media objects for this category.
 					mediaArray : [
 					    {image : 'WFC1.bmp'}, 
-						{image : 'WFC2.bmp'}, 
-						{image : 'WFC3.bmp'}, 
-						{image : 'WFC4.bmp'}, 
-						{image : 'WFC5.bmp'}, 
-						{image : 'WMC1.bmp'}, 
-						{image : 'WMC2.bmp'}, 
-						{image : 'WMC3.bmp'}, 
-						{image : 'WMC4.bmp'}, 
-						{image : 'WMC5.bmp'}]
+						{image : 'WhFC2.bmp'}, 
+						{image : 'WhFC3.bmp'}, 
+						{image : 'WhFC4.bmp'}, 
+						{image : 'WhFC5.bmp'}, 
+						{image : 'WhMC1.bmp'}, 
+						{image : 'WhMC2.bmp'}, 
+						{image : 'WhMC3.bmp'}, 
+						{image : 'WhMC4.bmp'}, 
+						{image : 'WhMC5.bmp'}]
 	
 
 				}, 
