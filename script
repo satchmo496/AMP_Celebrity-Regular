@@ -11,7 +11,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualt
 					nameForLogging : 'Regular people', //Will be used in the logging
 					//An array of all media objects for this category.
 					mediaArray : [
-					    {image : 'WFC1.bmp'}, 
+					    	{image : 'WhFC1.bmp'}, 
 						{image : 'WhFC2.bmp'}, 
 						{image : 'WhFC3.bmp'}, 
 						{image : 'WhFC4.bmp'}, 
